@@ -1,38 +1,115 @@
-.App {
+input {
+  width: 95%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: var(--color-navText);
+}
+
+input:focus {
+  outline: none;
+}
+
+hr {
+  border: 1px solid var(--color-navText);
+  margin-bottom: 25px;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background-color: var(--color-navActive);
+  color: var(--color-navText);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: var(--color-cancelBtn);
 }
 
-.App-link {
-  color: #61dafb;
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  border: 1px solid var(--color-navText);
+  width: 50%;
+  padding: 16px;
+  margin: 10rem 20rem;
+  background-color: var(--color-formbg);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sidenav {
+  height: 95%;
+  width: 15rem;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: var(--color-navbar);
+  overflow-x: hidden;
+  padding-top: 5rem;
+  margin-top: 3rem;
+}
+
+.sidenav a {
+  padding: 1rem 0rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--color-black);
+  display: block;
+  text-align: center;
+}
+
+.sidenav a.active {
+  background-color: var(--color-navActive);
+  color: var(--color-navText);
+}
+
+.topnav {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color: var(--color-navbar);
+}
+
+.topnav a {
+  float: right;
+  color: var(--color-black);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a.active {
+  background-color: var(--color-navActive);
+  color: var(--color-navText);
+}
+
+.mainBody {
+  margin-left: 15rem;
+  font-size: 28px;
+  padding: 5rem 2rem;
 }
